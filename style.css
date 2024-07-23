@@ -1,0 +1,435 @@
+.attribution { font-size: 11px; text-align: center; margin-top: 10%;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face {
+    font-family: boldFont;
+    src: url("Kumbh_Sans/static/KumbhSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: kumbFont;
+    src: url("Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+}
+
+h1, h2, h3, h4
+{
+    font-family: boldFont;
+}
+
+p
+{
+    font-family: kumbFont;
+    color: hsl(219, 9%, 45%);
+}
+
+h2
+{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: -2.5%;
+    margin-left: 15%;
+}
+
+li
+{
+    margin-left: 3%;
+    position: relative;
+    color: hsl(220, 14%, 75%);
+}
+
+#headerList:hover
+{
+    color: hsl(220, 13%, 13%);
+    cursor: pointer;
+}
+
+#headerList::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    height: 4px;
+    background-color: hsl(26, 100%, 55%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#headerList:hover::after {
+    transform: scaleX(1);
+}
+
+#shopIcon
+{
+    position: relative;
+    margin-top: -2.5%;
+    float: right;
+    margin-right: 17%;
+}
+
+#avatar
+{
+    transform: scale(0.45);
+    position: relative;
+    margin-top: -5%;
+    float: right;
+    margin-right: 9%;
+    box-sizing: border-box;
+}
+
+#avatar:hover
+{
+    border: 4px solid hsl(26, 100%, 55%);
+    border-radius: 360px;
+    cursor: pointer;
+}
+
+hr
+{
+    border: none;
+    height: 0.5px;
+    background-color: hsl(220, 14%, 75%);
+    position: absolute;
+}
+
+#containerHR
+{
+    width: 80%;
+    margin: 10px 0;
+    margin-left: 10%;
+}
+
+#mainShoePhoto
+{
+    border-radius: 8px;
+    margin-left: -21%;
+    margin-top: 3%;
+}
+
+#mainShoePhoto:hover
+{
+    cursor: pointer;
+}
+
+#closeBtn:hover
+{
+    cursor: pointer;
+}
+
+#lightBox
+{
+    display: none;
+    margin-top: -34%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.545);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#showcasePhoto
+{
+    margin-left: 36%;
+    margin-top: 6%;
+    border-radius: 16px;
+}
+
+#rightColumn
+{
+    position: relative;
+    float: right;
+    margin-top: -23.5%;
+    margin-right: 25%;
+}
+
+h1
+{
+    font-size: 3em;
+    margin-top: -2%;
+}
+
+#productDescription
+{
+    position: absolute;
+    transform: scale(1.1);
+    margin-left: 5%;
+    margin-top: -1%;
+}
+
+h4{
+    margin-top: 32%;
+    font-size: 1.4em;
+}
+
+#discountBg
+{
+    margin-top: -14%;
+    margin-left: 20%; 
+    background-color: black;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    transform: scale(0.8);
+}
+
+#discountRate
+{
+    color: white;
+    padding-top: 10%;
+    font-size: 1.1em;
+    font-family: boldFont;
+}
+
+#originalPrice
+{
+    margin-top: 2%;
+    text-decoration: line-through;
+    font-family: boldFont;
+}
+
+#shoeAmount
+{
+    background-color: hsl(223, 64%, 98%);
+    text-align: center;
+    border-radius: 6px;
+    width: 140px;
+    height: 50px;
+}
+
+#amount
+{
+    color: black;
+    margin-right: 25%;
+    padding-top: 10%;
+    font-family: boldFont;
+}
+
+#plusButton
+{
+    position: relative;
+    float: right;
+    margin-top: -21%;
+    margin-right: 17%;
+}
+
+#minusButton
+{
+    position: relative;
+    float: left;
+    margin-top: 17%;
+    margin-left: 15%;
+}
+
+#buyButton
+{
+    position: absolute;
+    border: none;
+    width: 275px;
+    height: 60px;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 6px;
+    margin-top: -13%;
+    margin-left: 40%;
+    font-family: boldFont;
+    font-size: 1.1em;
+}
+
+#thumbnails
+{
+    position: relative;
+    float: left;
+    margin-top: 32%;
+    margin-left: 8%;
+}
+
+#thumbnailss
+{
+    position: relative;
+    float: left;
+    margin-top: 1%;
+    margin-left: 33%;
+}
+
+#thumbnails li
+{
+    margin-left: 7%;
+}
+
+#thumbnails li:hover
+{
+    opacity: 0.5;
+}
+
+.thumbnailList
+{
+    border-radius: 8px;
+}
+
+
+.thumbnailList.active {
+    border: 3px solid hsl(26, 100%, 55%);
+    opacity: 0.5;
+  }
+
+  #thumbnailss li
+{
+    margin-left: 7%;
+}
+
+#thumbnailss li:hover
+{
+    opacity: 0.5;
+}
+
+.thumbnailListt
+{
+    border-radius: 8px;
+}
+
+
+.thumbnailListt.active {
+    border: 3px solid hsl(26, 100%, 55%);
+    opacity: 0.7;
+  }
+
+#cartCanvas
+{
+    display: none;
+    width: 310px;
+    height: 210px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    float: right;
+    margin-top: 2%;
+    margin-right: -10%;
+}
+
+#cartTitle
+{
+    margin-top: 4%;
+    margin-left: 5%;
+    font-size: 1.1em;
+}
+
+#cartHR
+{
+    width: 20.4%;
+}
+
+#CartText
+{
+    color: hsl(219, 9%, 45%);
+    font-size: 1em;
+    margin-left: 27%;
+    margin-top: 25%;
+}
+
+#nextBtn
+{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -2%;
+    background-color: white;
+    border-radius: 360px;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+#previousBtn
+{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -33%;
+    background-color: white;
+    border-radius: 360px;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+#previousIcon
+{
+    margin-top: 20%;
+}
+
+#nextIcon
+{
+    margin-top: 20%;
+}
+
+#closeBtn
+{
+    margin-left: 66.5%;
+    margin-top: 3.5%;
+    position: absolute;
+    transform: scale(1.3);
+}
+
+#cartThumbnail
+{
+    display: none;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: -4.2%;
+    border-radius: 8px;
+}
+
+#checkOutButton
+{
+    display: none;
+    background-color:  hsl(26, 100%, 55%);
+    border-radius: 8px;
+    border: none;
+    width: 275px;
+    height: 45px;
+    margin-left: 6%;
+    font-family: boldFont;
+}
+
+#deleteBtn
+{
+    position: absolute;
+    margin-left: 17%;
+    margin-top: -5%;
+}
+
+#deleteButton:hover
+{
+    cursor: pointer;
+}
+
+#itemAmount
+{
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    width: 30px;
+    height: 16px;
+    transform: scale(0.6);
+    margin-left: 80.9%;
+    margin-top: -2.8%;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 90;
+}
